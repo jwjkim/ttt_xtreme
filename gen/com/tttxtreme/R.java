@@ -10,18 +10,78 @@ package com.tttxtreme;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int black=0x7f040003;
+        public static final int sea_blue=0x7f040001;
+        public static final int sea_gray=0x7f040002;
+        public static final int sea_green=0x7f040000;
+        public static final int white=0x7f040004;
+    }
     public static final class dimen {
-        public static final int half_margin=0x7f040001;
-        public static final int standard_margin=0x7f040000;
+        public static final int half_margin=0x7f050001;
+        public static final int standard_margin=0x7f050000;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int ttt_one=0x7f020001;
+        public static final int ttt_two=0x7f020002;
+    }
+    public static final class id {
+        public static final int b_reset=0x7f07002b;
+        public static final int frame_focus_one_a=0x7f07001d;
+        public static final int frame_focus_one_b=0x7f07001e;
+        public static final int frame_focus_one_c=0x7f07001f;
+        public static final int frame_focus_one_d=0x7f070020;
+        public static final int frame_focus_one_e=0x7f070021;
+        public static final int frame_focus_one_f=0x7f070022;
+        public static final int frame_focus_one_g=0x7f070023;
+        public static final int frame_focus_one_h=0x7f070024;
+        public static final int frame_focus_one_i=0x7f070025;
+        public static final int frame_main_eight=0x7f07000a;
+        public static final int frame_main_five=0x7f070007;
+        public static final int frame_main_four=0x7f070006;
+        public static final int frame_main_nine=0x7f07000b;
+        public static final int frame_main_one=0x7f070003;
+        public static final int frame_main_seven=0x7f070009;
+        public static final int frame_main_six=0x7f070008;
+        public static final int frame_main_three=0x7f070005;
+        public static final int frame_main_two=0x7f070004;
+        public static final int game_focused_one=0x7f07001c;
+        public static final int game_frame=0x7f070002;
+        public static final int game_layout=0x7f070000;
+        public static final int h_f_one=0x7f070028;
+        public static final int h_f_two=0x7f070029;
+        public static final int h_m_five=0x7f07001a;
+        public static final int h_m_four=0x7f070018;
+        public static final int h_m_one=0x7f070014;
+        public static final int h_m_six=0x7f07001b;
+        public static final int h_m_three=0x7f070017;
+        public static final int h_m_two=0x7f070015;
+        public static final int h_one=0x7f070016;
+        public static final int h_two=0x7f070019;
+        public static final int main_activity_root=0x7f070001;
+        public static final int new_game=0x7f07002c;
+        public static final int test=0x7f07002a;
+        public static final int v_f_one=0x7f070026;
+        public static final int v_f_two=0x7f070027;
+        public static final int v_m_five=0x7f070012;
+        public static final int v_m_four=0x7f070010;
+        public static final int v_m_one=0x7f07000c;
+        public static final int v_m_six=0x7f070013;
+        public static final int v_m_three=0x7f07000f;
+        public static final int v_m_two=0x7f07000d;
+        public static final int v_one=0x7f07000e;
+        public static final int v_two=0x7f070011;
     }
     public static final class layout {
-        public static final int home_page=0x7f030000;
+        public static final int frame_page=0x7f030000;
+        public static final int home_page=0x7f030001;
+        public static final int tttx_frame=0x7f030002;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int new_game=0x7f050001;
+        public static final int app_name=0x7f060000;
+        public static final int empty=0x7f060003;
+        public static final int new_game=0x7f060001;
+        public static final int reset_game=0x7f060002;
     }
 }
