@@ -9,378 +9,324 @@
 
     <RelativeLayout
         android:id="@+id/main_activity_root"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@android:color/transparent" >
 
         <RelativeLayout
-            android:id="@+id/game_frame"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:id="@+id/frames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
             android:layout_marginLeft="@dimen/standard_margin"
             android:layout_marginRight="@dimen/standard_margin"
-            android:layout_marginTop="@dimen/standard_margin"
-            android:background="@color/white" >
+            android:layout_marginTop="@dimen/standard_margin" >
 
-            <View
-                android:id="@+id/frame_main_one"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <View
-                android:id="@+id/frame_main_two"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_toEndOf="@+id/frame_main_one"
-                android:layout_toRightOf="@+id/frame_main_one" />
-
-            <View
-                android:id="@+id/frame_main_three"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/frame_main_two"
-                android:layout_toRightOf="@+id/frame_main_two" />
-
-            <View
-                android:id="@+id/frame_main_four"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_main_one"
-                android:layout_marginTop="5dp" />
-
-            <View
-                android:id="@+id/frame_main_five"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_main_two"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_toEndOf="@+id/frame_main_four"
-                android:layout_toRightOf="@+id/frame_main_four" />
-
-            <View
-                android:id="@+id/frame_main_six"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_main_three"
-                android:layout_marginTop="5dp"
-                android:layout_toEndOf="@+id/frame_main_five"
-                android:layout_toRightOf="@+id/frame_main_five" />
-
-            <View
-                android:id="@+id/frame_main_seven"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_main_four" />
-
-            <View
-                android:id="@+id/frame_main_eight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_main_five"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_toEndOf="@+id/frame_main_seven"
-                android:layout_toRightOf="@+id/frame_main_seven" />
-
-            <View
-                android:id="@+id/frame_main_nine"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_main_six"
-                android:layout_toEndOf="@+id/frame_main_eight"
-                android:layout_toRightOf="@+id/frame_main_eight" />
-
-            <View
-                android:id="@+id/v_m_one"
-                android:layout_width="2dp"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/v_m_two"
-                android:layout_width="2dp"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/v_one"
-                android:layout_width="5dp"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/v_m_three"
-                android:layout_width="2dp"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/v_m_four"
-                android:layout_width="2dp"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/v_two"
-                android:layout_width="5dp"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/v_m_five"
-                android:layout_width="2dp"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/v_m_six"
-                android:layout_width="2dp"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/h_m_one"
+            <RelativeLayout
+                android:id="@+id/game_frame"
                 android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
+                android:layout_height="fill_parent"
+                android:background="@color/white" >
 
-            <View
-                android:id="@+id/h_m_two"
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
+                <View
+                    android:id="@+id/frame_main_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-            <View
-                android:id="@+id/h_one"
-                android:layout_width="fill_parent"
-                android:layout_height="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
+                <View
+                    android:id="@+id/frame_main_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/frame_main_one"
+                    android:layout_toRightOf="@+id/frame_main_one" />
 
-            <View
-                android:id="@+id/h_m_three"
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
+                <View
+                    android:id="@+id/frame_main_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/frame_main_two"
+                    android:layout_toRightOf="@+id/frame_main_two" />
 
-            <View
-                android:id="@+id/h_m_four"
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
+                <View
+                    android:id="@+id/frame_main_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frame_main_one"
+                    android:layout_marginTop="5dp" />
 
-            <View
-                android:id="@+id/h_two"
-                android:layout_width="fill_parent"
-                android:layout_height="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
+                <View
+                    android:id="@+id/frame_main_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frame_main_two"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/frame_main_four"
+                    android:layout_toRightOf="@+id/frame_main_four" />
 
-            <View
-                android:id="@+id/h_m_five"
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
+                <View
+                    android:id="@+id/frame_main_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frame_main_three"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/frame_main_five"
+                    android:layout_toRightOf="@+id/frame_main_five" />
 
-            <View
-                android:id="@+id/h_m_six"
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
+                <View
+                    android:id="@+id/frame_main_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frame_main_four" />
+
+                <View
+                    android:id="@+id/frame_main_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frame_main_five"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/frame_main_seven"
+                    android:layout_toRightOf="@+id/frame_main_seven" />
+
+                <View
+                    android:id="@+id/frame_main_nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frame_main_six"
+                    android:layout_toEndOf="@+id/frame_main_eight"
+                    android:layout_toRightOf="@+id/frame_main_eight" />
+
+                <View
+                    android:id="@+id/v_m_one"
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/v_m_two"
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/v_one"
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/v_m_three"
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/v_m_four"
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/v_two"
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/v_m_five"
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/v_m_six"
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/h_m_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/h_m_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/h_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/h_m_three"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/h_m_four"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/h_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/h_m_five"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+
+                <View
+                    android:id="@+id/h_m_six"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black"
+                    android:contentDescription="@string/empty" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/game_focused_one"
+                layout="@layout/frame_focused_one"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/game_focused_two"
+                layout="@layout/frame_focused_two"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/game_focused_three"
+                layout="@layout/frame_focused_three"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/game_focused_four"
+                layout="@layout/frame_focused_four"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/game_focused_five"
+                layout="@layout/frame_focused_five"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/game_focused_six"
+                layout="@layout/frame_focused_six"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/game_focused_seven"
+                layout="@layout/frame_focused_seven"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/game_focused_eight"
+                layout="@layout/frame_focused_eight"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/game_focused_nine"
+                layout="@layout/frame_focused_nine"
+                android:visibility="gone" />
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/game_focused_one"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_marginLeft="@dimen/standard_margin"
-            android:layout_marginRight="@dimen/standard_margin"
-            android:layout_marginTop="@dimen/standard_margin"
-            android:background="@color/white"
-            android:visibility="gone" >
+            android:id="@+id/b_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/frames"
+            android:layout_alignStart="@+id/frames"
+            android:layout_below="@+id/frames"
+            android:layout_marginTop="@dimen/half_margin" >
 
-            <View
-                android:id="@+id/frame_focus_one_a"
+            <TextView
+                android:id="@+id/test"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/sea_blue" />
+                android:layout_marginLeft="@dimen/half_margin"
+                android:layout_marginStart="@dimen/half_margin"
+                android:text="@string/example"
+                android:textColor="@color/black" />
 
-            <View
-                android:id="@+id/frame_focus_one_b"
+            <Button
+                android:id="@+id/b_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_toEndOf="@+id/frame_focus_one_a"
-                android:layout_toRightOf="@+id/frame_focus_one_a"
-                android:background="@color/sea_green" />
+                android:layout_below="@+id/test"
+                android:layout_marginTop="@dimen/half_margin"
+                android:text="@string/back" />
 
-            <View
-                android:id="@+id/frame_focus_one_c"
+            <Button
+                android:id="@+id/b_reset"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/frame_focus_one_b"
-                android:layout_toRightOf="@+id/frame_focus_one_b"
-                android:background="@color/sea_blue" />
-
-            <View
-                android:id="@+id/frame_focus_one_d"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_focus_one_a"
-                android:layout_marginTop="5dp"
-                android:background="@color/sea_green" />
-
-            <View
-                android:id="@+id/frame_focus_one_e"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_focus_one_b"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_toEndOf="@+id/frame_focus_one_d"
-                android:layout_toRightOf="@+id/frame_focus_one_d"
-                android:background="@color/sea_blue" />
-
-            <View
-                android:id="@+id/frame_focus_one_f"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_focus_one_c"
-                android:layout_marginTop="5dp"
-                android:layout_toEndOf="@+id/frame_focus_one_e"
-                android:layout_toRightOf="@+id/frame_focus_one_e"
-                android:background="@color/sea_green" />
-
-            <View
-                android:id="@+id/frame_focus_one_g"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_focus_one_d"
-                android:background="@color/sea_blue" />
-
-            <View
-                android:id="@+id/frame_focus_one_h"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_focus_one_e"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_toEndOf="@+id/frame_focus_one_g"
-                android:layout_toRightOf="@+id/frame_focus_one_g"
-                android:background="@color/sea_green" />
-
-            <View
-                android:id="@+id/frame_focus_one_i"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/frame_focus_one_f"
-                android:layout_toEndOf="@+id/frame_focus_one_h"
-                android:layout_toRightOf="@+id/frame_focus_one_h"
-                android:background="@color/sea_blue" />
-
-            <View
-                android:id="@+id/v_f_one"
-                android:layout_width="5dp"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/v_f_two"
-                android:layout_width="5dp"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/h_f_one"
-                android:layout_width="fill_parent"
-                android:layout_height="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
-
-            <View
-                android:id="@+id/h_f_two"
-                android:layout_width="fill_parent"
-                android:layout_height="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/black"
-                android:contentDescription="@string/empty" />
+                android:layout_below="@+id/test"
+                android:layout_marginTop="@dimen/half_margin"
+                android:layout_toEndOf="@+id/b_back"
+                android:layout_toRightOf="@+id/b_back"
+                android:text="@string/reset_game" />
         </RelativeLayout>
     </RelativeLayout>
-
-    <TextView
-        android:id="@+id/test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black" />
-
-    <Button
-        android:id="@+id/b_reset"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginTop="@dimen/standard_margin"
-        android:text="@string/reset_game" />
 
 </LinearLayout>

@@ -3,6 +3,8 @@
     <string name="app_name">Tic Tac Toe Xtreme</string>
     <string name="new_game">New Game</string>
     <string name="reset_game">Reset Game</string>
+    <string name="back">Back</string>
+    <string name="example">E.X.A.M.P.L.E.</string>
     <string name="empty"></string>
 
 </resources>
